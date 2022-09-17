@@ -7,6 +7,11 @@ export const UserContext = createContext({
     setCurrentUser: () => {}
 })
 
+export const ShopContext = createContext({
+    shopData: null,
+    setShopData: () => {}
+})
+
 
 
 export const UserProvider = ({children}) => {
@@ -29,3 +34,4 @@ export const UserProvider = ({children}) => {
 
     return  <UserContext.Provider value={value}>{children}</UserContext.Provider>
 }
+
